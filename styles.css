@@ -5,7 +5,19 @@
 }
 
 section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 100vh;
     width: 100%;
     background-color: #4070f4;
+}
+
+section .dots span {
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    transform: rotate(calc(var(--i) * (360deg/15))) translateY(35px);
 }
